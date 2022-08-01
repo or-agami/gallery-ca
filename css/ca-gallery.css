@@ -27,6 +27,12 @@ h6 {
 section {
     padding: 100px 0;
 }
+
+section form {
+    font-size: 20px;
+    color: white;
+}
+
 section h2.section-heading {
     font-size: 40px;
     margin-top: 0;
@@ -69,7 +75,8 @@ body {
     right: 3%;
     height: 50px;
     width: 50px;
-    background: #5d7788;
+    background: #222222;
+    color: white;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -84,7 +91,7 @@ body {
 .offcanvas-aside {
     position: fixed;
     height: 100%;
-    background: red;
+    background: #48535a;
     width: 80vw;
     right: -80vw;
     z-index: 10;
@@ -637,7 +644,7 @@ ul.social-buttons li a:hover {
     font-weight: 700;
     color: white;
     border-color: #47555e;
-    background-color: #47555e;
+    background-color: #222222;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
 }
@@ -650,7 +657,7 @@ ul.social-buttons li a:hover {
 .btn-primary:hover {
     color: white;
     border-color: #91bdd8;
-    background-color: #5b6e7a;
+    background-color: #23313a;
 }
 .btn-primary.active,
 .btn-primary:active,

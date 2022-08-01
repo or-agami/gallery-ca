@@ -19,7 +19,7 @@ function renderPortfolioProjects() {
                 <i class="fa fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
+            <img class="img-fluid" src="img/portfolio/${proj.id}-thumbnail.png" alt="">
           </a>
           <div class="portfolio-caption">
             <h4>${proj.name}</h4>
@@ -38,7 +38,7 @@ function onRenderProjectModal(projId) {
     const strHTML =
         `<h2>${proj.name}</h2>
         <p class="item-intro text-muted">${proj.title}</p>
-        <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="">
+        <img class="img-fluid d-block mx-auto" src="img/portfolio/${projId}-full.png" alt="">
         <p>${proj.desc}</p>
         <ul class="list-inline">
           <li>Date: ${proj.publishedAt}</li>
@@ -46,13 +46,13 @@ function onRenderProjectModal(projId) {
           <li>Category: ${proj.labels.join(', ')}</li>
           <li>
             <button class="btn btn-primary" onclick="window.open('${proj.url}','_blank')" type="button">
-              <i class="fa fa-github"></i>
-              Source Code
+              <i class="fa fa-external-link">&nbsp;</i>
+              View Project
             </button>
           </li>
         </ul>
         <button class="btn btn-primary" data-dismiss="modal" type="button">
-            <i class="fa fa-times"></i>
+            <i class="fa fa-times">&nbsp;</i>
             Close
         </button>`
 
@@ -72,4 +72,12 @@ function onSubmitContactMe(ev) {
         Massage: ${mailBody}`
 
     window.open(`${strMail}`, '_blank')
+
+    clearContactMeFields()
+}
+
+function clearContactMeFields() {
+    $('#mailInputForm').val('')
+    $('#subjectInputForm').val('')
+    $('#textInputForm').val('')
 }
