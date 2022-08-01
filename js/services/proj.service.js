@@ -5,11 +5,11 @@ var gProjects = [
         id: 'ergogami',
         name: 'Ergogami',
         title: 'Custom fully wireless split keyboard',
-        desc: 'I realized that I amm moving my fingers away from the homebrow a lot in "regular" keyboards and I tried to make a keyboard with minimal movement and improved ergonomics without compromise the keys behavior, you want to get one? click "View Project"!',
+        desc: '"Regular" keyboard layout is the same since the original mechanical type writer. I tried to make a keyboard with minimal fingers movement and improved ergonomics without compromise keys behavior. the layout is fully programmable with easy to use config, PCB design with future proof in mind - hot-swappable switches, easy to swap rechargable battery. you want to get one? click "View Project"!',
         url: 'https://github.com/or-agami/Ergogami',
         publishedAt: 'Jule 2022',
-        category: 'Game',
-        labels: ['Matrixes', 'Game']
+        category: 'Hardware',
+        labels: ['Electronics', 'Keyboard']
     },
     {
         id: 'minesweeper',
@@ -20,6 +20,16 @@ var gProjects = [
         publishedAt: 'Jule 2022',
         category: 'Game',
         labels: ['Matrixes', 'Game']
+    },
+    {
+        id: 'guess-me',
+        name: 'Guess Me',
+        title: 'Self-learning guess game',
+        desc: 'Basic self-learning logic of "guess me" game',
+        url: 'https://or-agami.github.io/guess-me-ca/',
+        publishedAt: 'Jule 2022',
+        category: 'Game',
+        labels: ['Game']
     },
     {
         id: 'in-picture',
@@ -37,16 +47,6 @@ var gProjects = [
         title: 'Try your best to press the nums by order',
         desc: 'You have to touch numbers quickly. The best score is the least time to touch all numbers in order.',
         url: 'https://or-agami.github.io/touch-nums-ca/',
-        publishedAt: 'Jule 2022',
-        category: 'Game',
-        labels: ['Matrixes', 'Game']
-    },
-    {
-        id: 'ball-board',
-        name: 'Ball Board',
-        title: 'Simple arcade game',
-        desc: 'Ball board is an video game. Balls are generated every few seconds, to win collect all the balls.',
-        url: 'https://or-agami.github.io/ball-board-ca/',
         publishedAt: 'Jule 2022',
         category: 'Game',
         labels: ['Matrixes', 'Game']
