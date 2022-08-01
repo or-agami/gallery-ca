@@ -1,7 +1,4 @@
-console.log('Starting up');
 
-
-// TODO: put listener in func
 $(initPortfolio)
 
 function initPortfolio() {
@@ -69,7 +66,10 @@ function onSubmitContactMe(ev) {
     const mailAddr = $('#mailInputForm').val()
     const subject = $('#subjectInputForm').val()
     const mailBody = $('#textInputForm').val()
+    console.log('mailBody:', mailBody);
     const strMail =
-        `https://mail.google.com/mail/?view=cm&fs=1&to=oragami0@gmail.com&su=${subject}&body=From: ${mailAddr}.Massage: ${mailBody}`
+    `https://mail.google.com/mail/?view=cm&fs=1&to=oragami0@gmail.com&su=${subject}&body=From: ${mailAddr}
+        Massage: ${mailBody}`
+
     window.open(`${strMail}`, '_blank')
 }
