@@ -2,11 +2,11 @@ console.log('Starting up');
 
 
 // TODO: put listener in func
-// $('.portfolio-link-test').click({ id: 'minesweeper' }, onRenderProjectModal)
 $(initPortfolio)
 
 function initPortfolio() {
     renderPortfolioProjects()
+    $('.btn-submit-form').click(onSubmitContactMe)
 }
 
 function renderPortfolioProjects() {
@@ -35,10 +35,10 @@ function renderPortfolioProjects() {
 
 function onRenderProjectModal(projId) {
     console.log('projId:', projId);
-    const proj = getProjectForDisplay(projId)
+    const proj = getProjectById(projId)
     const projectModal = document.querySelector('.portfolio-modal .modal-body')
-    
-    const strHTML = 
+
+    const strHTML =
         `<h2>${proj.name}</h2>
         <p class="item-intro text-muted">${proj.title}</p>
         <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="">
@@ -48,7 +48,7 @@ function onRenderProjectModal(projId) {
           <!-- <li>Client: Explore</li> -->
           <li>Category: ${proj.labels.join(', ')}</li>
           <li>
-            <button class="btn btn-primary" onclick=" window.open('${proj.url}','_blank')" type="button">
+            <button class="btn btn-primary" onclick="window.open('${proj.url}','_blank')" type="button">
               <i class="fa fa-github"></i>
               Source Code
             </button>
@@ -56,9 +56,20 @@ function onRenderProjectModal(projId) {
         </ul>
         <button class="btn btn-primary" data-dismiss="modal" type="button">
             <i class="fa fa-times"></i>
-            Close Project
+            Close
         </button>`
-    
+
     projectModal.innerHTML = strHTML
-    
+}
+
+function onSubmitContactMe(ev) {
+
+    ev.preventDefault()
+
+    const mailAddr = $('#mailInputForm').val()
+    const subject = $('#subjectInputForm').val()
+    const mailBody = $('#textInputForm').val()
+    const strMail =
+        `https://mail.google.com/mail/?view=cm&fs=1&to=oragami0@gmail.com&su=${subject}&body=From: ${mailAddr}.Massage: ${mailBody}`
+    window.open(`${strMail}`, '_blank')
 }

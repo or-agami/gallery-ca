@@ -6,7 +6,7 @@ var gProjects = [
         name: 'Minesweeper',
         title: 'Minesweeper game with extra features',
         desc: 'Minesweeper is single-player logic-based computer game played on rectangular board whose object is to locate a predetermined number of randomly-placed mines in the shortest possible time by clicking on safe squares while avoiding the squares with mines.',
-        url: 'https://github.com/or-agami/Minesweeper-CA/blob/main/index.html',
+        url: 'https://github.com/or-agami/Minesweeper-CA',
         publishedAt: 'Jule 2022',
         category: 'Game',
         labels: ['Matrixes', 'Game']
@@ -88,7 +88,7 @@ function getProjectsForDisplay() {
     return gProjects
 }
 
-function getProjectForDisplay(projId) {
+function getProjectById(projId) {
     console.log('projId:', projId);
     const proj = gProjects.find(proj => proj.id === projId)
     console.log('proj:', proj);
