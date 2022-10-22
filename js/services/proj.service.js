@@ -2,6 +2,16 @@
 
 var gProjects = [
     {
+        id: 'agenda',
+        name: 'Agenda',
+        title: 'Task manager inspired by Monday',
+        desc: 'agenda is an platform where anyone can create and manage the tools they need to run every aspect of their work. With agenda every project become more easy to manage and follow the progress of the project members, open your account and try now!. Inspired by Monday',
+        url: 'https://agenda.agami-network.com',
+        publishedAt: 'Sep 2022',
+        category: 'Tool',
+        labels: ['Organize', 'Productivity tool', 'Management']
+    },
+    {
         id: 'ergogami',
         name: 'Ergogami',
         title: 'Custom fully wireless split keyboard',
@@ -12,6 +22,16 @@ var gProjects = [
         labels: ['Electronics', 'Keyboard']
     },
     {
+        id: 'meme-generator',
+        name: 'Meme Generator',
+        title: 'Single page web-app to make awesome memes',
+        desc: 'Awesome looking single web app with meme templates and fully customizable pics with saving, download and share options, build with vanilla js and responsive design ',
+        url: 'https://or-agami.github.io/meme-generator-ca/',
+        publishedAt: 'Aug 2022',
+        category: 'Game',
+        labels: ['Game']
+    },
+    {
         id: 'minesweeper',
         name: 'Minesweeper',
         title: 'Minesweeper game with extra features',
@@ -20,16 +40,6 @@ var gProjects = [
         publishedAt: 'Jule 2022',
         category: 'Game',
         labels: ['Matrixes', 'Game']
-    },
-    {
-        id: 'guess-me',
-        name: 'Guess Me',
-        title: 'Self-learning guess game',
-        desc: 'Basic self-learning logic of "guess me" game',
-        url: 'https://or-agami.github.io/guess-me-ca/',
-        publishedAt: 'Jule 2022',
-        category: 'Game',
-        labels: ['Game']
     },
     {
         id: 'in-picture',
@@ -47,46 +57,6 @@ var gProjects = [
         title: 'Try your best to press the nums by order',
         desc: 'You have to touch numbers quickly. The best score is the least time to touch all numbers in order.',
         url: 'https://or-agami.github.io/touch-nums-ca/',
-        publishedAt: 'Jule 2022',
-        category: 'Game',
-        labels: ['Matrixes', 'Game']
-    },
-    {
-        id: 'todos',
-        name: 'Todos',
-        title: 'Get organized with the things you need to do',
-        desc: 'Simple yet efficient todo list',
-        url: 'https://or-agami.github.io/todos-ca/',
-        publishedAt: 'Jule 2022',
-        category: 'Tool',
-        labels: ['Organize', 'Productivity tool']
-    },
-    {
-        id: 'safe-content',
-        name: 'Safe Content',
-        title: 'Safe content with admin page',
-        desc: 'Proof of concept login page with personal content and admin managment page',
-        url: 'https://or-agami.github.io/safe-content-ca/',
-        publishedAt: 'Jule 2022',
-        category: 'Tool',
-        labels: ['Organize', 'Productivity']
-    },
-    {
-        id: 'book-shop',
-        name: 'Book Shop',
-        title: 'Admin management page of book store',
-        desc: 'Management of books for book store owner',
-        url: 'https://or-agami.github.io/book-shop-ca/',
-        publishedAt: 'Jule 2022',
-        category: 'Store',
-        labels: ['Management', 'Store', 'Admin']
-    },
-    {
-        id: 'pacman',
-        name: 'Pacman',
-        title: 'Simple Pacman game',
-        desc: 'Extremely simple Pac-Man game. The objective of the game is to eat all of the dots placed in the maze while avoiding colored ghosts',
-        url: 'https://or-agami.github.io/pacman-ca/',
         publishedAt: 'Jule 2022',
         category: 'Game',
         labels: ['Matrixes', 'Game']
