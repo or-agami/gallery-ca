@@ -42,16 +42,6 @@ var gProjects = [
         labels: ['Matrixes', 'Game']
     },
     {
-        id: 'in-picture',
-        name: 'In Picture',
-        title: 'What is in the Picture?',
-        desc: 'Test your knowledge on games, can you recognize them all?',
-        url: 'https://or-agami.github.io/in-picture-ca/',
-        publishedAt: 'Jule 2022',
-        category: 'Game',
-        labels: ['Game']
-    },
-    {
         id: 'touch-nums',
         name: 'Touch Nums',
         title: 'Try your best to press the nums by order',
